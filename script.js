@@ -38,7 +38,7 @@ function encriptar(inputText) {
 function desencriptar(inputText) {
     let resultado = inputText;
 
-    for (let i = 0; i < encriptacion.length; i++) {
+    for (let i = encriptacion.length - 1; i >= 0; i--) {
         //resultado = resultado.split(encriptacion[i][1]).join(encriptacion[i][0]);
         resultado =  resultado.replaceAll(
             encriptacion[i][1],
